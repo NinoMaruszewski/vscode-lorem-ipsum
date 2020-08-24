@@ -17,7 +17,7 @@
 		"commands": [
 			{
 				"command": "lipsum-generator.genLipsum",
-				"title": "Hello World"
+				"title": "Lorem Ipsum: Generate Lorem Ipsum text"
 			}
 		]
 	},
