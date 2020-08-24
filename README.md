@@ -5,7 +5,7 @@
 - [Extension Settings](#Extension-Settings)
 - [Known Bugs](#Known-Bugs)
 - [Release Notes](#Release-Notes)
-- [Changelog](./CHANGELOG.md)
+- [Changelog](https://github.com/MrAwesomeRocks/vscode-lorem-ipsum/blob/master/CHANGELOG.md)
 
 ## Features
 Generating Lipsum text into a file:
