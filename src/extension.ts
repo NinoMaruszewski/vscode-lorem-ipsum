@@ -2,7 +2,7 @@
 import * as vscode from "vscode";
 
 // Import command functions
-import genLipsum from "./genLipsum";
+import { vscodeLipsum as genLipsum } from "./genLipsum";
 
 // Extension activation function
 export function activate(context: vscode.ExtensionContext) {
