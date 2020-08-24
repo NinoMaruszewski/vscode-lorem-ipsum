@@ -48,7 +48,7 @@ function checkLengthInput(lenText: string) {
 /**
  * Function for interfacing with the user to create the Lipsum text.
  */
-export async function vscodeLipsum(): Promise<void> {
+async function makeLipsum(): Promise<string> {
     // Get the length of the text to be generated:
     let length = await vscode.window.showInputBox({
         prompt:
@@ -59,7 +59,7 @@ export async function vscodeLipsum(): Promise<void> {
 
     // If the user canceled out, quit.
     if (!length) {
-        return;
+        return "";
     }
 
     // Convert length to number
@@ -73,7 +73,7 @@ export async function vscodeLipsum(): Promise<void> {
 
     // If the user canceled out, quit.
     if (!lenType) {
-        return;
+        return "";
     }
 
     // Now, generate the lipsum text:
@@ -87,13 +87,19 @@ export async function vscodeLipsum(): Promise<void> {
         var lipsumFixed = lipsum;
     }
 
+    return lipsumFixed;
+}
+
+export async function vscodeLipsum() {
+    const lipsum = await makeLipsum();
+
     // Check if editor is open:
     const editor = vscode.window.activeTextEditor;
 
     // If there is no open editor, open one:
     if (!editor) {
         const document = await vscode.workspace.openTextDocument({
-            content: lipsumFixed,
+            content: lipsum,
         });
         vscode.window.showTextDocument(document);
     }
@@ -109,12 +115,10 @@ export async function vscodeLipsum(): Promise<void> {
                 editBuilder.delete(selection);
 
                 // Insert new lipsum text:
-                editBuilder.insert(selection.start, lipsumFixed);
+                editBuilder.insert(selection.start, lipsum);
             });
         });
     }
 }
 
-export async function clipboardLipsum(): Promise<void> {
-
-}
+export async function clipboardLipsum(): Promise<void> {}
