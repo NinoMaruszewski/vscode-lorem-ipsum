@@ -39,6 +39,9 @@ None so far, but feel free to go to the [bug tracker](https://github.com/MrAweso
 
 ## Release Notes
 
+### 1.0.4
+License
+
 ### 1.0.3
 Icon, bug tracker, updated readme
 

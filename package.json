@@ -68,5 +68,6 @@
     "icon": "icon.png",
     "bugs": {
         "url": "https://github.com/MrAwesomeRocks/vscode-lorem-ipsum/issues"
-    }
+    },
+    "license": "LICENSE"
 }
