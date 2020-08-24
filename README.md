@@ -31,7 +31,7 @@ This extension contributes the following settings:
 
 ## Known Bugs
 
-None so far, but feel free to go to the [bug tracker](example.com) to report any bugs that you find.
+None so far, but feel free to go to the [bug tracker](https://github.com/MrAwesomeRocks/vscode-lorem-ipsum/issues) to report any bugs that you find.
 
 ## Release Notes
 
