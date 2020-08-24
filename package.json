@@ -2,7 +2,7 @@
     "name": "lipsum-generator",
     "displayName": "Lipsum Generator",
     "description": "A lorem ipsum placeholder text generator for VS Code. Adds snippets for 1 sentence and 1 paragraph, more specific text lengths from the command pallette.",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "engines": {
         "vscode": "^1.48.0"
     },
