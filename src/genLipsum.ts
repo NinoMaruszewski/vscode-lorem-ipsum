@@ -62,6 +62,9 @@ export default async function vscodeLipsum(): Promise<void> {
         return;
     }
 
+    // Convert length to number
+    const lengthNum = Number(length);
+
     // Ask for words, sentences, or paragraphs:
     let lenType = await vscode.window.showQuickPick(
         ["words", "sentences", "paragraphs"],
@@ -73,7 +76,41 @@ export default async function vscodeLipsum(): Promise<void> {
         return;
     }
 
-    // For testing: print length and lenType
-    console.log("length", length);
-    console.log("lenType", lenType);
+    // Now, generate the lipsum text:
+    const lipsum = generateLoremIpsum(lengthNum, lenType);
+
+    // Add "Lorem ipsum dolor sit amet, " to the front if the string is over 5 words.
+    if (lenType !== "words" && lengthNum > 5) {
+        const lipsumLower = lipsum.charAt(0).toLowerCase() + lipsum.slice(1);
+        var lipsumFixed = "Lorem ipsum dolor sit amet, " + lipsumLower;
+    } else {
+        var lipsumFixed = lipsum;
+    }
+
+    // Check if editor is open:
+    const editor = vscode.window.activeTextEditor;
+
+    // If there is no open editor, open one:
+    if (!editor) {
+        const document = await vscode.workspace.openTextDocument({
+            content: lipsumFixed,
+        });
+        vscode.window.showTextDocument(document);
+    }
+    // Otherwise, paste the text in the current editor:
+    else {
+        editor.edit((editBuilder) => {
+            // Get selected text
+            const selections = editor.selections;
+
+            // For each selection:
+            selections.forEach((selection) => {
+                // Delete selected text:
+                editBuilder.delete(selection);
+
+                // Insert new lipsum text:
+                editBuilder.insert(selection.start, lipsumFixed);
+            });
+        });
+    }
 }
