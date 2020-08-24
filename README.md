@@ -18,7 +18,7 @@ Generating and copying Lipsum text:
 ![Generate and copy Lipsum text](https://raw.githubusercontent.com/MrAwesomeRocks/vscode-lorem-ipsum/master/images/clip_lipsum_text.gif)
 
 Snippets:
-![Paragraph and Sentance Lipsum snippets](https://raw.githubusercontent.com/MrAwesomeRocks/vscode-lorem-ipsum/master/images/lipsum_snippet.gif)
+![Paragraph and Sentence Lipsum snippets](https://raw.githubusercontent.com/MrAwesomeRocks/vscode-lorem-ipsum/master/images/lipsum_snippet.gif)
 
 ## Extension Settings
 
