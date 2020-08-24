@@ -80,7 +80,7 @@ async function makeLipsum(): Promise<string> {
     const lipsum = generateLoremIpsum(lengthNum, lenType);
 
     // Add "Lorem ipsum dolor sit amet, " to the front if the string is over 5 words.
-    if (lenType !== "words" && lengthNum > 5) {
+    if (lenType !== "words" || (lenType === 'words' && lengthNum > 5)) {
         const lipsumLower = lipsum.charAt(0).toLowerCase() + lipsum.slice(1);
         var lipsumFixed = "Lorem ipsum dolor sit amet, " + lipsumLower;
     } else {
