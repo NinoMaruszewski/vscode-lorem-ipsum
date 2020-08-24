@@ -2,7 +2,10 @@
 import * as vscode from "vscode";
 
 // Import command functions
-import { vscodeLipsum as genLipsum } from "./genLipsum";
+import {
+    vscodeLipsum as genLipsum,
+    clipboardLipsum as clipLipsum,
+} from "./genLipsum";
 
 // Extension activation function
 export function activate(context: vscode.ExtensionContext) {
@@ -15,6 +18,11 @@ export function activate(context: vscode.ExtensionContext) {
     let lipsumGeneralGen = vscode.commands.registerCommand(
         "lipsum-generator.genLipsum",
         genLipsum
+    );
+
+    let lipsumClipGen = vscode.commands.registerCommand(
+        "lipsum-generator.genClipLipsum",
+        clipLipsum
     );
 
     context.subscriptions.push(lipsumGeneralGen);
