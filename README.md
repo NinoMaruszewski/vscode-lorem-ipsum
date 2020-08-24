@@ -10,11 +10,11 @@
 ## Features
 Generating Lipsum text into a file:
 
-![Generate Lipsum text into file](images/gen_lipsum_text.gif)
+![Generate Lipsum text into file](https://github.com/MrAwesomeRocks/vscode-lorem-ipsum/blob/master/images/gen_lipsum_text.gif)
 
 Generating and copying Lipsum text:
 
-![Generate and copy Lipsum text](images/gen_lipsum_text.gif)
+![Generate and copy Lipsum text](https://github.com/MrAwesomeRocks/vscode-lorem-ipsum/blob/master/images/gen_lipsum_text.gif)
 
 ## Extension Settings
 
