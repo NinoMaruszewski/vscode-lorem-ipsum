@@ -1,5 +1,5 @@
 # Lorem Ipsum Generator for VSCode
-
+![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/mrawesomerocks.lipsum-generator?style=for-the-badge) ![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/MrAwesomeRocks.lipsum-generator?style=for-the-badge)  ![Visual Studio MarketplaceRatings](https://img.shields.io/visual-studio-marketplace/r/MrAwesomeRocks.lipsum-generator?style=for-the-badge)  [![GitHub license](https://img.shields.io/github/license/MrAwesomeRocks/vscode-lorem-ipsum?style=for-the-badge)](https://github.com/MrAwesomeRocks/vscode-lorem-ipsum/blob/master/LICENSE) [![GitHub issues](https://img.shields.io/github/issues/MrAwesomeRocks/vscode-lorem-ipsum?style=for-the-badge)](https://github.com/MrAwesomeRocks/vscode-lorem-ipsum/issues)
 ## Table of Contents:
 - [Features](#Features)
 - [Extension Settings](#Extension-Settings)
@@ -49,7 +49,7 @@ Icon, bug tracker, updated readme
 Readme fixes, License.
 
 ### 1.0.1
-Git repo to `package.json`.
+Git repo added to `package.json`.
 
 ### 1.0.0
 
