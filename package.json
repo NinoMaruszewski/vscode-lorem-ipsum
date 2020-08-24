@@ -64,5 +64,9 @@
     "repository": {
         "type": "git",
         "url": "https://github.com/MrAwesomeRocks/vscode-lorem-ipsum.git"
+    },
+    "icon": "icon.png",
+    "bugs": {
+        "url": "https://github.com/MrAwesomeRocks/vscode-lorem-ipsum/issues"
     }
 }
