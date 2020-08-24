@@ -114,3 +114,7 @@ export async function vscodeLipsum(): Promise<void> {
         });
     }
 }
+
+export async function clipboardLipsum(): Promise<void> {
+
+}
