@@ -91,6 +91,7 @@ async function makeLipsum(): Promise<string> {
 }
 
 export async function vscodeLipsum() {
+    // Get lipsum text:
     const lipsum = await makeLipsum();
 
     // Check if editor is open:
@@ -121,4 +122,11 @@ export async function vscodeLipsum() {
     }
 }
 
-export async function clipboardLipsum(): Promise<void> {}
+export async function clipboardLipsum(): Promise<void> {
+    // Get lipsum text:
+    const lipsum = await makeLipsum();
+
+    // Write text to clipboard:
+    const clipboard = vscode.env.clipboard;
+    return clipboard.writeText(lipsum);
+}
