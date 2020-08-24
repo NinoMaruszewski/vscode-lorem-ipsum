@@ -6,6 +6,7 @@
 - [Known Bugs](#Known-Bugs)
 - [Release Notes](#Release-Notes)
 - [Changelog](https://github.com/MrAwesomeRocks/vscode-lorem-ipsum/blob/master/CHANGELOG.md)
+- [License](https://raw.githubusercontent.com/MrAwesomeRocks/vscode-lorem-ipsum/master/LICENSE)
 
 ## Features
 Generating Lipsum text into a file:
@@ -34,6 +35,12 @@ This extension contributes the following settings:
 None so far, but feel free to go to the [bug tracker](https://github.com/MrAwesomeRocks/vscode-lorem-ipsum/issues) to report any bugs that you find.
 
 ## Release Notes
+
+### 1.0.2
+Readme fixes, License.
+
+### 1.0.1
+Git repo to `package.json`.
 
 ### 1.0.0
 
