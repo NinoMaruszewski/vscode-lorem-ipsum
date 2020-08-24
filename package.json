@@ -10,13 +10,13 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:lipsum-generator.helloWorld"
+		"onCommand:lipsum-generator.genLipsum"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "lipsum-generator.helloWorld",
+				"command": "lipsum-generator.genLipsum",
 				"title": "Hello World"
 			}
 		]
@@ -41,5 +41,12 @@
 		"mocha": "^7.1.2",
 		"typescript": "^3.8.3",
 		"vscode-test": "^1.3.0"
+	},
+	"dependencies": {
+		"@vscode-logging/logger": "^1.2.0",
+		"lorem-ipsum": "^2.0.3"
+	},
+	"prettier": {
+		"tabWidth": 4
 	}
 }
