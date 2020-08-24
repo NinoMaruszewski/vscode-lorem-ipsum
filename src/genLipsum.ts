@@ -49,15 +49,31 @@ function checkLengthInput(lenText: string) {
  * Function for interfacing with the user to create the Lipsum text.
  */
 export default async function vscodeLipsum(): Promise<void> {
-    // Get the length of the text to be generated
+    // Get the length of the text to be generated:
     let length = await vscode.window.showInputBox({
         prompt:
             "How much Lorem Ipsum text do you want to generate, in a number.\nThis many words, sentences, or paragraphs will be generated.",
         placeHolder: "10",
         validateInput: checkLengthInput,
     });
+
+    // If the user canceled out, quit.
     if (!length) {
         return;
     }
 
+    // Ask for words, sentences, or paragraphs:
+    let lenType = await vscode.window.showQuickPick(
+        ["words", "sentences", "paragraphs"],
+        { canPickMany: false }
+    );
+
+    // If the user canceled out, quit.
+    if (!lenType) {
+        return;
+    }
+
+    // For testing: print length and lenType
+    console.log("length", length);
+    console.log("lenType", lenType);
 }
