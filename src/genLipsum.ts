@@ -90,6 +90,9 @@ async function makeLipsum(): Promise<string> {
     return lipsumFixed;
 }
 
+/**
+ * Function for writing lipsum text to the editor.
+ */
 export async function vscodeLipsum() {
     // Get lipsum text:
     const lipsum = await makeLipsum();
@@ -122,6 +125,9 @@ export async function vscodeLipsum() {
     }
 }
 
+/**
+ * Function for writing lipsum text to the clipboard.
+ */
 export async function clipboardLipsum(): Promise<void> {
     // Get lipsum text:
     const lipsum = await makeLipsum();
