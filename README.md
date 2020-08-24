@@ -17,6 +17,9 @@ Generating and copying Lipsum text:
 
 ![Generate and copy Lipsum text](https://raw.githubusercontent.com/MrAwesomeRocks/vscode-lorem-ipsum/master/images/clip_lipsum_text.gif)
 
+Snippets:
+![Paragraph and Sentance Lipsum snippets](https://raw.githubusercontent.com/MrAwesomeRocks/vscode-lorem-ipsum/master/images/lipsum_snippet.gif)
+
 ## Extension Settings
 
 None so far, but some may be added in the future.
@@ -35,6 +38,9 @@ This extension contributes the following settings:
 None so far, but feel free to go to the [bug tracker](https://github.com/MrAwesomeRocks/vscode-lorem-ipsum/issues) to report any bugs that you find.
 
 ## Release Notes
+
+### 1.0.3
+Icon, bug tracker, updated readme
 
 ### 1.0.2
 Readme fixes, License.
