@@ -48,7 +48,7 @@ function checkLengthInput(lenText: string) {
 /**
  * Function for interfacing with the user to create the Lipsum text.
  */
-export default async function vscodeLipsum(): Promise<void> {
+export async function vscodeLipsum(): Promise<void> {
     // Get the length of the text to be generated:
     let length = await vscode.window.showInputBox({
         prompt:
