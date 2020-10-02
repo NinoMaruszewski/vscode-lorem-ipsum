@@ -48,6 +48,9 @@ None so far, but feel free to go to the [bug tracker](https://github.com/MrAweso
 
 ## Release Notes
 
+### 1.1.1
+Added snippet description to readme.
+
 ### 1.1.0
 Fixed snippets.
 
@@ -59,6 +62,3 @@ Icon, bug tracker, updated readme.
 
 ### 1.0.2
 Readme fixes, License.
-
-### 1.0.1
-Git repo added to `package.json`.
