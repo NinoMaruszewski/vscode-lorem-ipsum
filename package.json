@@ -29,7 +29,7 @@
         "snippets": [
             {
                 "language": "",
-                "path": "./src/snippets/lorem-ipsum.code-snippets"
+                "path": "./snippets/lorem-ipsum.code-snippets"
             }
         ]
     },
