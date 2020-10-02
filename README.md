@@ -19,6 +19,15 @@ Generating and copying Lipsum text:
 
 Snippets:
 ![Paragraph and Sentence Lipsum snippets](https://raw.githubusercontent.com/MrAwesomeRocks/vscode-lorem-ipsum/master/images/lipsum_snippet.gif)
+The two snippets are
+```
+lipSent
+```
+and
+```
+lipPara
+```
+for pasting a sentence and paragraph of Lorem Ipsum text, respectively.
 
 ## Extension Settings
 
