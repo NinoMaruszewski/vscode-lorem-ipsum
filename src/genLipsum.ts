@@ -33,13 +33,30 @@ function generateLoremIpsum(length: number, lengthType: string): string {
  * Check if the text from the input box is a valid number and between 0 and 1000.
  *
  * @param lenText Text from the input box.
+ * @returns If the text is valid
  */
 function checkLengthInput(lenText: string) {
     const lenTextNum = Number(lenText);
     if (isNaN(lenTextNum)) {
         return "Please enter a valid number.";
-    } else if (lenTextNum > 1000 || lenTextNum < 0) {
+    } else if (lenTextNum > 1000 || lenTextNum < 1) {
         return "Please enter a number between 1 and 1000.";
+    } else {
+        return;
+    }
+}
+
+/**
+ * Check if the text from the input box is a valid number greater than or equal to 1000.
+ * @param lenText Text from the input bot
+ *
+ */
+function checkSplitLengthInput(lenText: string) {
+    const lenTextNum = Number(lenText);
+    if (isNaN(lenTextNum)) {
+        return "Please enter a valid number.";
+    } else if (lenTextNum < 0) {
+        return "Please enter a number greater than 0.";
     } else {
         return;
     }
@@ -76,15 +93,36 @@ async function makeLipsum(): Promise<string> {
         return "";
     }
 
+    // Ask if the user wants to insert new lines
+    let newLines = Number(
+        await vscode.window.showInputBox({
+            prompt:
+                "How often do you want to insert new lines (in characters) in the Lorem Ipsum text? Type in 0 if you don't want to split the text.",
+            placeHolder: "80",
+            validateInput: checkSplitLengthInput,
+        })
+    );
+
     // Now, generate the lipsum text:
     const lipsum = generateLoremIpsum(lengthNum, lenType);
 
     // Add "Lorem ipsum dolor sit amet, " to the front if the string is over 5 words.
-    if (lenType !== "words" || (lenType === 'words' && lengthNum > 5)) {
+    if (lenType !== "words" || (lenType === "words" && lengthNum > 5)) {
         const lipsumLower = lipsum.charAt(0).toLowerCase() + lipsum.slice(1);
         var lipsumFixed = "Lorem ipsum dolor sit amet, " + lipsumLower;
     } else {
         var lipsumFixed = lipsum;
+    }
+
+    // Split the text if it is wanted
+    if (newLines && newLines > 0) {
+        const split = lipsumFixed.match(new RegExp(`.{1,${newLines}}`, "g"));
+        lipsumFixed = "";
+        if (split) {
+            for (let i = 0; i < split.length; i++) {
+                lipsumFixed += split[i] + "\n";
+            }
+        }
     }
 
     return lipsumFixed;
