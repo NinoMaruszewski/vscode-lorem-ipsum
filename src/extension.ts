@@ -26,6 +26,7 @@ export function activate(context: vscode.ExtensionContext) {
     );
 
     context.subscriptions.push(lipsumGeneralGen);
+    context.subscriptions.push(lipsumClipGen);
 }
 
 // this method is called when your extension is deactivated
