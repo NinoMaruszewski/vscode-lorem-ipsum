@@ -17,17 +17,14 @@ Generating and copying Lipsum text:
 
 ![Generate and copy Lipsum text](https://raw.githubusercontent.com/NinoMaruszewski/vscode-lorem-ipsum/master/images/clip_lipsum_text.gif)
 
-Snippets:
+Snippets (the `lipsumMultiPara` one is not shown):
 ![Paragraph and Sentence Lipsum snippets](https://raw.githubusercontent.com/NinoMaruszewski/vscode-lorem-ipsum/master/images/lipsum_snippet.gif)
-The two snippets are
-```
-lipSent
-```
-and
-```
-lipPara
-```
-for pasting a sentence and paragraph of Lorem Ipsum text, respectively.
+The three snippets are:
+- `lipsumSent`
+- `lipsumPara`
+- `lipsumMultiPara`
+
+for pasting a sentence, paragraph, and multi-line paragraph of Lorem Ipsum text, respectively.
 
 ## Extension Settings
 
@@ -48,6 +45,12 @@ None so far, but feel free to go to the [bug tracker](https://github.com/NinoMar
 
 ## Release Notes
 
+### 1.2.1
+Add multi-line Lorem Ipsum generation, fix some mistakes.
+
+### 1.2.0
+Add multi-line paragraph snippet (`lipsumMultiPara`).
+
 ### 1.1.2
 Moved to [new git repo](https://github.com/NinoMaruszewski/vscode-lorem-ipsum).
 
@@ -59,9 +62,3 @@ Fixed snippets.
 
 ### 1.0.4
 License.
-
-### 1.0.3
-Icon, bug tracker, updated readme.
-
-### 1.0.2
-Readme fixes, License.
