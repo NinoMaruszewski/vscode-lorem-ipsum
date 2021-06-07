@@ -69,11 +69,11 @@
     "publisher": "MrAwesomeRocks",
     "repository": {
         "type": "git",
-        "url": "https://github.com/NinoMaruszewski/vscode-lorem-ipsum.git"
+        "url": "https://github.com/MrAwesomeRocks/vscode-lorem-ipsum.git"
     },
     "icon": "icon.png",
     "bugs": {
-        "url": "https://github.com/NinoMaruszewski/vscode-lorem-ipsum/issues"
+        "url": "https://github.com/MrAwesomeRocks/vscode-lorem-ipsum/issues"
     },
     "license": "LICENSE"
 }
