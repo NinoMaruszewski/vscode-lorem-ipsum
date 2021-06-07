@@ -50,6 +50,10 @@ None so far, but feel free to go to the [bug tracker](https://github.com/MrAweso
 
 ## Release Notes
 
+### 1.2.2
+
+New github username.
+
 ### 1.2.1
 
 Add multi-line Lorem Ipsum generation, fix some mistakes.
@@ -69,7 +73,3 @@ Added snippet description to readme.
 ### 1.1.0
 
 Fixed snippets.
-
-### 1.0.4
-
-License.
