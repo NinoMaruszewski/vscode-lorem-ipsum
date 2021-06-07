@@ -50,6 +50,10 @@ None so far, but feel free to go to the [bug tracker](https://github.com/MrAweso
 
 ## Release Notes
 
+### 1.2.3
+
+More changelog updates
+
 ### 1.2.2
 
 New github username.
